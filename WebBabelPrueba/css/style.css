@@ -14,6 +14,7 @@ A>B>C>D
    License: none (public domain)
 */
 /*Reset*/
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,60 +34,47 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}*/
+div{
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid grey;
+    /*overflow: hidden;*/
 }
-
-
-h1 {
-    font-size: 2rem;
-    color:rgb(192, 192, 192);
+div.flotar:after{
+    content: "";
+    display:block;
+    clear: both;
 }
-header {
+h1{
+    width:100%;
+    padding-right: auto;
+    padding-left: 50%;
+    min-width: 100%;
+    margin:auto;
+}
+.flotar p{
+    width: 20%;
+    float:left;
+    background-color: blueviolet;
+    padding: 1%;
+}
+.inline{
+    padding: 
+}
+.inline p{
+    width: 20%;
+   display: inline-block;
+    background-color: blueviolet;
+    padding: 1%;
+   margin: -2px;
+}
+.inline p:not(:first-child){
+    margin-left:-2px;
+}
+.flotar p:not(:last-child){
+   
+    margin-right:5%;
     
 }
-/*#p1 {
-    color:red;
-}
-.verde{
-    color:green;
-}
-.grande{
-    font-size: 20px;
-}*/
-header  p{
-    font-size: 1.3rem;
-}
-span{
-    visibility: hidden;
-}
 
-p[lang="en"]:hover span{
-    visibility: visible;
-    color:firebrick;
-    font-weight:bold;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-p[lang="en"]:hover::first-letter{
-    color:firebrick;
-    font-weight:bold;
-    font-size: 4rem;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-div{
-    content: counter()
-}
-p:nth-child(2){
-    font-weight:bold;
-}
-p:nth-of-type(1){
-    font-style: italic;
-}
-
-ul:hover::after{ 
-        content: "Aqui termina una lista";   
-}
-ul:hover::before{
-content: "Aqui empieza una lista";
-}
