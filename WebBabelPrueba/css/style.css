@@ -6,9 +6,42 @@ C = class (.verde)
 D = element (h1, header< h1, body p, etc)
 A>B>C>D
 */
+*,*::before,*::after,*:before,*:after{
+    box-sizing:border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 h1 {
     font-size: 2rem;
     color:rgb(192, 192, 192);
+}
+header {
+    
 }
 /*#p1 {
     color:red;
@@ -21,8 +54,39 @@ h1 {
 }*/
 header  p{
     font-size: 1.3rem;
+}
+span{
+    visibility: hidden;
+}
+
+p[lang="en"]:hover span{
+    visibility: visible;
+    color:firebrick;
+    font-weight:bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-p[lang="en"]:hover #p1{
-    color:firebrick
+p[lang="en"]:hover::first-letter{
+    color:firebrick;
+    font-weight:bold;
+    font-size: 4rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div{
+    content: counter()
+}
+p:nth-child(2){
+    font-weight:bold;
+}
+p:nth-of-type(1){
+    font-style: italic;
+}
+
+ul:hover::after{ 
+        content: "Aqui termina una lista";   
+}
+ul:hover::before{
+content: "Aqui empieza una lista";
 }
