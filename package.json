@@ -1,0 +1,24 @@
+{
+  "name": "Curso-Babel-Html",
+  "version": "1.0.0",
+  "description": "Cuso Frontend en Babel, 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego-Garzon-Molina/Curso-Babel-Html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diego-Garzon-Molina/Curso-Babel-Html/issues"
+  },
+  "homepage": "https://github.com/Diego-Garzon-Molina/Curso-Babel-Html#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "http-server": "^0.11.1"
+  }
+}

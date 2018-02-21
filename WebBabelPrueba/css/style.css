@@ -1,0 +1,28 @@
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+/*
+A = online
+B = id  (#p1)
+C = class (.verde)
+D = element (h1, header< h1, body p, etc)
+A>B>C>D
+*/
+h1 {
+    font-size: 2rem;
+    color:rgb(192, 192, 192);
+}
+/*#p1 {
+    color:red;
+}
+.verde{
+    color:green;
+}
+.grande{
+    font-size: 20px;
+}*/
+header  p{
+    font-size: 1.3rem;
+
+}
+p[lang="en"]:hover #p1{
+    color:firebrick
+}
