@@ -1,6 +1,6 @@
 
 
-//JavaScript no es multihilo, pero si asíncrono
+//JavaScript no es multihilo* (puede serlo, pero no es el procedimiento general), pero si asíncrono
 //Asincronía
 //Eventos de usuario
 //LLamadas a servidor
