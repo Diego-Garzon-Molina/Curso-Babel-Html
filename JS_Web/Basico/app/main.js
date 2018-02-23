@@ -1,31 +1,28 @@
-//Crear una funcion vacia para evitar las variables globales. 
-//Una funcion anonima vacia que se llama a si misma => Clousure !!Investigar!!
-(function () {
- /**Eventos de carga de pagina */
-    /**DOcument => DOMCOntentLoaded */
-    //document.addEventListener("DOMContentLoaded", inicioScript,false);
-    /**window => load */
-    //window-addEventListener("Load",main.false);
-    document.addEventListener('DOMContentLoaded', main, false)
+class Main{
+    constructor(){
+        document.addEventListener('DOMContentLoaded', this.definir.bind(this), false)
+       
+    }
 
-// 
-})();
-function main(){
-    document.getElementById('btnSaludar').addEventListener('click',btnEventClick,false)
-    document.getElementById('btnRegistrar').addEventListener('click',btnEventClick2,false)
-    document.getElementById('btnGoogle').addEventListener('click',btnEventGoogle)
-    
-    function btnEventClick(){
-
+     definir(){
+        document.getElementById('btnSaludar').addEventListener('click',this.btnEventClick,false)
+        document.getElementById('btnRegistrar').addEventListener('click',this.btnEventClick2,false)
+        document.getElementById('btnGoogle').addEventListener('click',this.btnEventGoogle,false)
+        console.dir(this)
+     }
+     btnEventClick(){
         alert('Hola a todos')    
     }
-    function btnEventClick2(){
+     btnEventClick2(){
         let user
-        user = window.prompt('Dime tu nombre',)
-        /* console.dir(document.getElementById('btn_2'))
-        */
+        user = window.prompt('Dime tu nombre','Pepe')    
     }
-    function btnEventGoogle(){
+     btnEventGoogle(){
         window.location.href='https://google.es/'
     }
 }
+
+
+(function () {
+    new Main()  
+})();
