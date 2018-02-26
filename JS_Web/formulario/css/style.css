@@ -13,3 +13,6 @@ footer {
 .verde {
     color:green;
 }
+:required, .required{
+    color:green;
+}

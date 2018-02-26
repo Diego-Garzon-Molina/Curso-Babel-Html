@@ -20,14 +20,16 @@ class Main{
         this.modelo.resultado.classList.add('verde')
     }
     _rellenarTareas(){
-        this.modelo.arrayTareas = JSON.parse(localStorage.getItem('tareas')) ? JSON.parse(localStorage.getItem('tareas')) : []
-        this.modelo.arrayTareas.forEach(element => {
-            document.getElementById('lista').innerHTML+='<li>'+element+'</li>'
-        });
+        if (localStorage.getItem('nombre')){
+            this.modelo.arrayTareas = JSON.parse(localStorage.getItem('tareas')) ? JSON.parse(localStorage.getItem('tareas')) : []
+            this.modelo.arrayTareas.forEach(element => {
+                document.getElementById('lista').innerHTML+='<li>'+element+'</li>'
+            });
+        }
     }
 
-     btnEventRegistrar(){
-        
+     btnEventRegistrar(oEv){
+        console.log(oEv)
        // user = window.prompt('Dime tu nombre','Pepe')   
         var nombre = this.modelo.inputNombre.value
         var tarea = this.modelo.inputTarea.value
