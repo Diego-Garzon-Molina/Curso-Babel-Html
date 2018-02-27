@@ -1,0 +1,18 @@
+Prototipo
+-Responsive
+-menu desplegable en movil
+-Validar HTML5
+-2 paginas minimo
+-header, nav, footer
+
+-Home
+    *2 articulos, texto, imagenes videos
+    *informacion extra tangencial
+-About
+    *breve reseña y fotografía del autor/autores
+    *formulario de contacto para sugerencias
+        +nombre
+        +correo
+        +preferencias de usuario
+        +mostrar por pantalla los datos y guardar de forma local
+-Home/About pueden ser paginas distintas o templates cargados dinamicamente, justificar la elección
